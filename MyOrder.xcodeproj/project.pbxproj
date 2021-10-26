@@ -13,6 +13,8 @@
 		BDB2D10827286292000DFEE2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB2D0F327286289000DFEE2 /* ContentView.swift */; };
 		BDB2D10927286292000DFEE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDB2D0F427286292000DFEE2 /* Assets.xcassets */; };
 		BDB2D10A27286292000DFEE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDB2D0F427286292000DFEE2 /* Assets.xcassets */; };
+		BDB2D11B27286887000DFEE2 /* MyOrderHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB2D11A27286887000DFEE2 /* MyOrderHelper.swift */; };
+		BDB2D1212728692E000DFEE2 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB2D1202728692E000DFEE2 /* Order.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		BDB2D10127286292000DFEE2 /* MyOrder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyOrder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDB2D10327286292000DFEE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDB2D10427286292000DFEE2 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		BDB2D11A27286887000DFEE2 /* MyOrderHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrderHelper.swift; sourceTree = "<group>"; };
+		BDB2D1202728692E000DFEE2 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +61,10 @@
 		BDB2D0F127286289000DFEE2 /* MyOrder */ = {
 			isa = PBXGroup;
 			children = (
+				BDB2D119272867E9000DFEE2 /* Helpers */,
+				BDB2D118272867E1000DFEE2 /* Models */,
+				BDB2D117272867D7000DFEE2 /* Views */,
 				BDB2D0F227286289000DFEE2 /* MyOrderApp.swift */,
-				BDB2D0F327286289000DFEE2 /* ContentView.swift */,
 				BDB2D0F427286292000DFEE2 /* Assets.xcassets */,
 			);
 			path = MyOrder;
@@ -88,6 +94,30 @@
 				BDB2D10427286292000DFEE2 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		BDB2D117272867D7000DFEE2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BDB2D0F327286289000DFEE2 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BDB2D118272867E1000DFEE2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BDB2D1202728692E000DFEE2 /* Order.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BDB2D119272867E9000DFEE2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BDB2D11A27286887000DFEE2 /* MyOrderHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +219,8 @@
 			files = (
 				BDB2D10727286292000DFEE2 /* ContentView.swift in Sources */,
 				BDB2D10527286292000DFEE2 /* MyOrderApp.swift in Sources */,
+				BDB2D1212728692E000DFEE2 /* Order.swift in Sources */,
+				BDB2D11B27286887000DFEE2 /* MyOrderHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
