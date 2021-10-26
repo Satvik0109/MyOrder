@@ -47,21 +47,21 @@
 		BDB2D0EC27286289000DFEE2 = {
 			isa = PBXGroup;
 			children = (
-				BDB2D0F127286289000DFEE2 /* Shared */,
+				BDB2D0F127286289000DFEE2 /* MyOrder */,
 				BDB2D0FB27286292000DFEE2 /* iOS */,
 				BDB2D10227286292000DFEE2 /* macOS */,
 				BDB2D0FA27286292000DFEE2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		BDB2D0F127286289000DFEE2 /* Shared */ = {
+		BDB2D0F127286289000DFEE2 /* MyOrder */ = {
 			isa = PBXGroup;
 			children = (
 				BDB2D0F227286289000DFEE2 /* MyOrderApp.swift */,
 				BDB2D0F327286289000DFEE2 /* ContentView.swift */,
 				BDB2D0F427286292000DFEE2 /* Assets.xcassets */,
 			);
-			path = Shared;
+			path = MyOrder;
 			sourceTree = "<group>";
 		};
 		BDB2D0FA27286292000DFEE2 /* Products */ = {
