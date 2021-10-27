@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct MyOrderApp: App {
+    let persistenceController = PersistenceController.shared
+    let myOrderHelper = MyOrderHelper(context: PersistenceController.shared.container.viewContext)
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(myOrderHelper)
         }
     }
 }

@@ -9,6 +9,18 @@ import Foundation
 
 struct Order : Identifiable, Hashable{
     
+    enum oType {
+        case Original
+        case Dark
+        case French
+    }
+    
+    enum oSize{
+        case Small
+        case Medium
+        case Large
+    }
+    
     var id = UUID()
     var oType: String = ""
     var oSize: String = ""
