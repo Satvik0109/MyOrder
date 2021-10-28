@@ -9,34 +9,22 @@ import Foundation
 
 struct Order : Identifiable, Hashable{
     
-    enum oType {
-        case Original
-        case Dark
-        case French
-    }
-    
-    enum oSize{
-        case Small
-        case Medium
-        case Large
-    }
-    
     var id = UUID()
     var oType: String = ""
     var oSize: String = ""
-    var oQty: Int = 0
+    var oQty: String = ""
     
     init(){
     }
     
-    init(oType: String, oSize: String, oQty: Int){
+    init(oType: String, oSize: String, oQty: String){
         
         self.oType = oType
         self.oSize = oSize
         self.oQty = oQty
     }
     
-    init(oID:UUID, oType: String, oSize: String, oQty: Int){
+    init(oID:UUID, oType: String, oSize: String, oQty: String){
         
         self.id = oID
         self.oType = oType
