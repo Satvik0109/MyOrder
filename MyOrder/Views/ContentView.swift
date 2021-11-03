@@ -37,8 +37,10 @@ struct ContentView: View {
                             })
                         })
                     }//Section
-                    TextField("Quantity", text:self.$cQty)
-                        .keyboardType(.decimalPad)
+                    Section{
+                        TextField("Quantity", text:self.$cQty)
+                    }
+                   
                 }//Form
                 
                 Button(action:{
@@ -53,7 +55,9 @@ struct ContentView: View {
                         dismissButton: .default(Text("Try Again"))
                     )
                 }
-                
+                NavigationLink(destination: OrderListView()){
+                    Text("Order List")
+                }
                 //BUTTON TO NAVIGATE TO ORDERLIST
                 
             }//VStack
@@ -65,9 +69,10 @@ struct ContentView: View {
         if(self.cType.isEmpty || self.cType.isEmpty || self.cQty.isEmpty){
             self.alertMessage = "No Fields Should Be Left Empty"
             self.showErrorAlert = true
-        }
+        }else{
         self.myOrderHelper.insertTask(order: Order(oType: self.cType,oSize: self.cSize, oQty: self.cQty))
         self.presentationMode.wrappedValue.dismiss()
+        }
     }
 }
 

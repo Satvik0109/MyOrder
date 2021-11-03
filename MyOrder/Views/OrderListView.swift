@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct OrderListView: View {
-    
+
     @State private var selectedIndex : Int = -1
     @State private var selection : Int? = nil
     @State private var showNewOrderView : Bool = false
     @EnvironmentObject var myOrderHelper : MyOrderHelper
-    
+
     var body: some View {
         NavigationView{
             ZStack(alignment: .bottom){
@@ -22,10 +22,10 @@ struct OrderListView: View {
                     List{
                         ForEach(self.myOrderHelper.orderList.enumerated().map({$0}), id: \.element.self){ indx, currentOrder in
                             VStack(alignment: .leading){
-                                Text("\(currentOrder.quantity)x \(currentOrder.type)")
+                                Text("\(currentOrder.quantity!)x \(currentOrder.type!)")
                                     .fontWeight(.bold)
-                                
-                                Text("Size: \(currentOrder.size)")
+
+                                Text("Size: \(currentOrder.size!)")
                                     .font(.callout)
                                     .italic()
                             }
@@ -49,17 +49,11 @@ struct OrderListView: View {
                         Spacer()
                     }//VStack
                 }//else
-                
-                Button(action:
-                        {
-                            print("Adding New Order")
-                            //self.showNewOrderView = true
-                            ContentView()
-                        }){
-                    Text("Place An Order")
-                }//Button
             }//ZStack
             .navigationBarTitle("Orders", displayMode: .inline)
+            NavigationLink(destination: ContentView()){
+                Text("Place An Order")
+            }
         }//Navigation View
         .onAppear(){
             self.myOrderHelper.getAllOrders()

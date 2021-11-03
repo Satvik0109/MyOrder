@@ -35,9 +35,9 @@ struct DetailView: View {
         }//VStack
         .frame(maxWidth: .infinity)
         .onAppear(){
-            self.type = self.myOrderHelper.orderList[selectedOrderIndex].type
-            self.size = self.myOrderHelper.orderList[selectedOrderIndex].size
-            self.qty = self.myOrderHelper.orderList[selectedOrderIndex].quantity
+//            self.type = self.myOrderHelper.orderList[selectedOrderIndex].type
+//            self.size = self.myOrderHelper.orderList[selectedOrderIndex].size
+//            self.qty = self.myOrderHelper.orderList[selectedOrderIndex].quantity
         }
         .onDisappear(){
             self.myOrderHelper.orderList.removeAll()

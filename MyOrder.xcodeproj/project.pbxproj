@@ -7,15 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD8993482731D5CD00C9C268 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD8993462731D5CD00C9C268 /* CoreData.xcdatamodeld */; };
 		BDB2D10527286292000DFEE2 /* MyOrderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB2D0F227286289000DFEE2 /* MyOrderApp.swift */; };
 		BDB2D10627286292000DFEE2 /* MyOrderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB2D0F227286289000DFEE2 /* MyOrderApp.swift */; };
 		BDB2D10727286292000DFEE2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB2D0F327286289000DFEE2 /* ContentView.swift */; };
 		BDB2D10827286292000DFEE2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB2D0F327286289000DFEE2 /* ContentView.swift */; };
-		BDB2D10927286292000DFEE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDB2D0F427286292000DFEE2 /* Assets.xcassets */; };
-		BDB2D10A27286292000DFEE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDB2D0F427286292000DFEE2 /* Assets.xcassets */; };
 		BDB2D11B27286887000DFEE2 /* MyOrderHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB2D11A27286887000DFEE2 /* MyOrderHelper.swift */; };
 		BDB2D1212728692E000DFEE2 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB2D1202728692E000DFEE2 /* Order.swift */; };
-		BDB2D12527286D17000DFEE2 /* OrderMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB2D12427286D17000DFEE2 /* OrderMO.swift */; };
 		BDB2D1292728701D000DFEE2 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB2D1282728701D000DFEE2 /* Persistence.swift */; };
 		BDB2D12D272B006F000DFEE2 /* OrderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB2D12C272B006F000DFEE2 /* OrderListView.swift */; };
 		BDB2D12E272B006F000DFEE2 /* OrderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB2D12C272B006F000DFEE2 /* OrderListView.swift */; };
@@ -24,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD8993472731D5CD00C9C268 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 		BDB2D0F227286289000DFEE2 /* MyOrderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrderApp.swift; sourceTree = "<group>"; };
 		BDB2D0F327286289000DFEE2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BDB2D0F427286292000DFEE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -34,7 +33,6 @@
 		BDB2D10427286292000DFEE2 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		BDB2D11A27286887000DFEE2 /* MyOrderHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrderHelper.swift; sourceTree = "<group>"; };
 		BDB2D1202728692E000DFEE2 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
-		BDB2D12427286D17000DFEE2 /* OrderMO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMO.swift; sourceTree = "<group>"; };
 		BDB2D1282728701D000DFEE2 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		BDB2D12C272B006F000DFEE2 /* OrderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListView.swift; sourceTree = "<group>"; };
 		BDB2D131272B0227000DFEE2 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
@@ -121,7 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				BDB2D1202728692E000DFEE2 /* Order.swift */,
-				BDB2D12427286D17000DFEE2 /* OrderMO.swift */,
+				BD8993462731D5CD00C9C268 /* CoreData.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -212,7 +210,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDB2D10927286292000DFEE2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +217,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDB2D10A27286292000DFEE2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,12 +229,12 @@
 			files = (
 				BDB2D10727286292000DFEE2 /* ContentView.swift in Sources */,
 				BDB2D132272B0227000DFEE2 /* DetailView.swift in Sources */,
+				BD8993482731D5CD00C9C268 /* CoreData.xcdatamodeld in Sources */,
 				BDB2D10527286292000DFEE2 /* MyOrderApp.swift in Sources */,
 				BDB2D1212728692E000DFEE2 /* Order.swift in Sources */,
 				BDB2D12D272B006F000DFEE2 /* OrderListView.swift in Sources */,
 				BDB2D1292728701D000DFEE2 /* Persistence.swift in Sources */,
 				BDB2D11B27286887000DFEE2 /* MyOrderHelper.swift in Sources */,
-				BDB2D12527286D17000DFEE2 /* OrderMO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +481,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BD8993462731D5CD00C9C268 /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BD8993472731D5CD00C9C268 /* CoreData.xcdatamodel */,
+			);
+			currentVersion = BD8993472731D5CD00C9C268 /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BDB2D0ED27286289000DFEE2 /* Project object */;
 }
